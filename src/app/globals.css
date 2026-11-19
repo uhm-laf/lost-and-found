@@ -12,3 +12,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* ---------- UH Manoa Lost & Found theme (shared by every page) ---------- */
+:root {
+  --laf-green: #024731;
+  --laf-green-mid: #0b6b4c;
+  --laf-green-light: #e8f3ee;
+}
+body {
+  background-color: #f6f8f7;
+}
+.laf-navbar,
+.laf-footer {
+  background-color: var(--laf-green);
+}
+/* Green banner for the top of a page: <section className="page-header text-white py-4"> */
+.page-header {
+  background: linear-gradient(135deg, var(--laf-green) 0%, var(--laf-green-mid) 100%);
+}

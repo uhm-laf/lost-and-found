@@ -1,18 +1,26 @@
-import { Col, Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 const Footer = () => (
-  <footer className="mt-auto py-3 bg-light">
+  <footer className="mt-auto py-4 laf-footer text-white">
     <Container>
-      <Col className="text-center">
-        Department of Information and Computer Sciences
-        <br />
-        University of Hawaii
-        <br />
-        Honolulu, HI 96822
-        <br />
-        <a href="http://ics-software-engineering.github.io/nextjs-application-template">Template Home Page</a>
-      </Col>
+      <Row className="g-3">
+        <Col md={6}>
+          <div className="fw-bold">UH Manoa Lost &amp; Found</div>
+          <div className="small">
+            An ICS 314 project by Riki Sanehira, Sammie Lin, Ethan Kirkham, and Jeremy Molina.
+          </div>
+        </Col>
+        <Col md={6} className="text-md-end small">
+          University of Hawaii at Manoa
+          <br />
+          Honolulu, HI 96822
+          <br />
+          <a href="https://uhm-laf.github.io" className="link-light">
+            Project Home Page
+          </a>
+        </Col>
+      </Row>
     </Container>
   </footer>
 );
