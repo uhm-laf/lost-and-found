@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 /** UH Manoa Lost & Found Landing Page. */
 const Home = () => (
@@ -19,7 +19,7 @@ const Home = () => (
       }}
     >
       <h1 className="display-3 fw-bold mb-4">
-        UH Manoa Lost &amp; Found
+        UH Mānoa Lost &amp; Found
       </h1>
 
       <p className="fs-4 mb-4">
@@ -27,13 +27,19 @@ const Home = () => (
       </p>
 
       <div className="d-flex gap-3 flex-wrap justify-content-center">
-        <Button as={Link} href="/browse" variant="light" size="lg">
+        <Link
+          href="/browse"
+          className="btn btn-light btn-lg"
+        >
           Browse Items
-        </Button>
+        </Link>
 
-        <Button as={Link} href="/report" variant="success" size="lg">
+        <Link
+          href="/report"
+          className="btn btn-success btn-lg"
+        >
           + Report an Item
-        </Button>
+        </Link>
       </div>
     </Container>
 
@@ -49,7 +55,7 @@ const Home = () => (
             <div className="display-4 mb-3">🔎</div>
             <h3>Find Items</h3>
             <p>
-              Browse lost and found items across the UH Manoa campus.
+              Browse lost and found items across the UH Mānoa campus.
             </p>
           </div>
         </Col>
@@ -79,3 +85,4 @@ const Home = () => (
 );
 
 export default Home;
+
