@@ -27,17 +27,11 @@ const Home = () => (
       </p>
 
       <div className="d-flex gap-3 flex-wrap justify-content-center">
-        <Link
-          href="/browse"
-          className="btn btn-light btn-lg"
-        >
+        <Link href="/browse" className="btn btn-light btn-lg">
           Browse Items
         </Link>
 
-        <Link
-          href="/report"
-          className="btn btn-success btn-lg"
-        >
+        <Link href="/report" className="btn btn-success btn-lg">
           + Report an Item
         </Link>
       </div>
@@ -85,4 +79,5 @@ const Home = () => (
 );
 
 export default Home;
+
 
